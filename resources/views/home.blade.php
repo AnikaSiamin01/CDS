@@ -58,8 +58,8 @@
                 </ul>
 
 
-                    <a class="btn btn-success my-2 my-sm-0 mr-3 p-3" >Login</a>
-                    <a class="btn btn-success my-2 my-sm-0 p-3" >Registration</a>
+                    <a href="{{route('login')}}" class="btn btn-success my-2 my-sm-0 mr-3 p-3" >Login</a>
+                    <a href="{{route('register')}}" class="btn btn-success my-2 my-sm-0 p-3" >Registration</a>
 
             </div>
         </nav>
@@ -76,8 +76,8 @@
             </div>
             <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:px-0">
 
-                <button
-                    class=" banner-btn  m-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">get started now</button>
+                <a href="{{route('register')}}"
+                    class=" banner-btn  m-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">get started now</a>
             </div>
         </div>
     </section>
