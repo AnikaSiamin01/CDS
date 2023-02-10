@@ -11,7 +11,7 @@
     <div class="text-center"><h2><b>Create New Course</b></h2></div>
     <div class="max-w-3xl mx-auto sm:px-6 lg:px-6 mt-9">
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
-    <form method="POST" action="{{ route('admin.course.create') }}">
+    <form method="POST" action="{{ route('admin.course.store') }}">
         @csrf
 
         <!-- Name -->

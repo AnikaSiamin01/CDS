@@ -22,8 +22,8 @@ class CreateCoursesTable extends Migration
             $table->string('type');
             $table->string('year');
             $table->string('semister');
-            $table->string('status');
-            $table->string('assign_to');
+            $table->string('status')->nullable();
+            $table->string('assign_to')->nullable();
             $table->timestamps();
         });
     }

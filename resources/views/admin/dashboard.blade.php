@@ -1,5 +1,6 @@
 @php
 $teacher=\App\Models\User::all();
+$course=\App\Models\Course::all();
 @endphp
 
 <x-admin-layout>
@@ -63,17 +64,30 @@ $teacher=\App\Models\User::all();
                             <thead>
                             <tr>
                                 <th scope="col">Id</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Designation</th>
-                                <th scope="col">Status</th>
+                                <th scope="col">Course Name</th>
+                                <th scope="col">Code</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Year</th>
+                                <th scope="col">Semester</th>
+
+                                <th scope="col">Credit</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Assign Status</th>
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($teacher as $item)
+                            @foreach($course as $item)
                                 <tr>
                                     <td>{{$item->id}}</td>
                                     <td>{{$item->name}}</td>
-                                    <td>{{$item->designation}}</td>
+                                    <td>{{$item->code}}</td>
+                                    <td>{{$item->title}}</td>
+                                    <td>{{$item->year}}</td>
+                                    <td>{{$item->semister}}</td>
+
+                                    <td>{{$item->credit}}</td>
+                                    <td>{{$item->type}}</td>
+
                                     <td>
                                         @if($item->status=="")<span class="btn btn-sm btn-secondary" ><i class="fa fa-times"></i> </span> @endif
                                         @if($item->status!="")<span class="btn btn-sm btn-primary" ><i class="fa fa-check"></i> </span></span> @endif

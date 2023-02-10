@@ -1,5 +1,5 @@
 @php
-$teacher=\App\Models\User::all();
+$teacher=\App\Models\User::orderBy('role', 'asc')->get();
 @endphp
 
 <x-app-layout>
@@ -8,6 +8,10 @@ $teacher=\App\Models\User::all();
 {{--            {{ __('Dashboard') }}--}}
         </h2>
     </x-slot>
+    <p class="font-semibold text-xl text-gray-800 leading-tight px-10 mx-10 mt-10">
+        {{ __('***  The choice list should be given by priority table shown in below. when you see the above position
+  of the table is completed their choice , then you are proceed to make choice') }}
+    </p>
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -20,7 +24,7 @@ $teacher=\App\Models\User::all();
 
                             <thead>
                             <tr>
-                                <th scope="col">Id</th>
+                                <th scope="col">Priority</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Designation</th>
                                 <th scope="col">Status</th>
@@ -29,7 +33,7 @@ $teacher=\App\Models\User::all();
                             <tbody>
                             @foreach($teacher as $item)
                             <tr>
-                                <td>{{$item->id}}</td>
+                                <td>{{$item->role}}</td>
                                 <td>{{$item->name}}</td>
                                 <td>{{$item->designation}}</td>
                                 <td>
