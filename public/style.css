@@ -1,0 +1,249 @@
+/*
+
+font-family: 'Lato', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source sans pro', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Leto' , sans-serif;
+}
+a,a:hover,a:focus{
+    text-decoration: none;
+}
+
+/* top-section */
+.top-section{
+    background-color: aliceblue;
+    font-size: 12px;
+}
+.contact-info span{
+    margin-right: 29px;
+    margin-left: 9px;
+}
+.social-icon i{
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+
+/* menu and navbar */
+.navbar-nav li a{
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+
+
+/* banner */
+.banner{
+
+  background-image: url("img/background.jpg");
+  height: 620px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-body{
+    padding-top: 180px;
+}
+.made_for{
+    font-family: 'Lato', sans-serif;
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+}
+.banner-sub{
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    word-spacing: 4px;
+    color: black;
+}
+.banner-btn{
+    background-color: blue;
+    text-transform:uppercase ;
+    font-size: 14px;
+}
+
+/* Beautiful-clean-responsive section */
+.beauti-header{
+    color: #506A85;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+.beauti-sub-header{
+    color: #73879C;
+}
+.sub-text p{
+    width: 50%;
+    margin:auto;
+    margin-bottom: 20px;
+}
+.beauti-sec div div h2{
+       color: #506A85;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+.heart-icon i{
+   color: #00BC9C;
+}
+
+
+/* check-out-letest-work */
+.check-out{
+background-color: #F2F5F7;
+}
+.check-sec{
+           color: #506A85;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+.buy-sec-inner{
+     background-color: white !important;
+}
+.buy-sec h2{
+    font-size: 18px;
+
+}
+
+/* work with us */
+.work-sec{
+            color: #506A85;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+.get-in-btn{
+    background-color: #00BC9C;
+    text-transform:uppercase ;
+    font-size: 14px;
+}
+
+/* footer */
+footer{
+    background-color: #2F4052;
+
+}
+.footer-sec >div >h2{
+    text-transform: uppercase;
+     font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+.footer-sec >div >nav{
+    align-items: flex-start;
+}
+.reen-img{
+    width: 120px;
+}
+
+.copyright{
+    background-color: #283645;
+}
+.footer-sec-sub h2{
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+.footer-reen-logo{
+    color: white;
+}
+.footer-description{
+   color: #98A6B5;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+}
+.footer-item-nav{
+    color: #A2B0BE;
+     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+.single-col{
+  margin: 0px ;
+ padding: 5px;
+
+}
+.subs{
+
+    background-color:  #4E5C6C;
+    padding:5px;
+    position: absolute;
+    margin-top: 4px;
+}
+.subs input{
+    display: inline;
+    border: none;
+    border-radius: 0px ;
+    border-style: none;
+    outline: none;
+    height: 100%;
+    width: 100px;
+
+}
+
+.subs input::placeholder{
+
+    color: #A2B0BE;
+    background-color:  #4E5C6C;
+}
+.subs-btn{
+
+ color: white;
+ font-size: 13px;
+ padding: 5px;
+ float: right;
+ background-color: #00BC9C;
+ position: relative;
+ margin-left: 100px;
+ border-radius: 3px;
+}
+.footer-nav{
+    display: block;
+}
+.footer-nav  li{
+   display: inline-block;
+   color: #949BA2;
+}
+#myBtn {
+
+   /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #3C5065; /* Set a background color */
+  color: #949BA2; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  height: auto;
+  width: 50px;
+
+  border-radius: 5px; /* Rounded corners */
+   /* Increase font size */
+}
+#myBtn i{
+   font-size: 28px;
+}
+#myBtn:hover{
+     background-color: #949BA2;
+    color:#3C5065 ;
+    transition: 3s;
+}
+#myBtn:hover>  i{
+
+    font-size: 30px;
+}
