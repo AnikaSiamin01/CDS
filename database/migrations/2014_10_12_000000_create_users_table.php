@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('designation');
             $table->string('role');
             $table->string('least_credit');
+            $table->string('status')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();

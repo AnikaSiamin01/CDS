@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +24,8 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+//Admin Route
+Route::get('/admin',[AdminController::class,'index'])->middleware(['auth'])->name('admin');
+Route::get('/admin/create',[AdminController::class,'courseCreate'])->middleware(['auth'])->name('admin.course.create');
+Route::post('/admin/create/store',[AdminController::class,'courseCreateStore'])->middleware(['auth'])->name('admin.course.create');

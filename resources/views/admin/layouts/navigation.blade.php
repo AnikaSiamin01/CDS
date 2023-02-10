@@ -12,15 +12,15 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                    <x-nav-link :href="route('admin')" :active="request()->routeIs('dashboard')">
+                        {{ __('Admin Dashboard') }}
                     </x-nav-link>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Make my choice') }}
+                    <x-nav-link :href="route('admin.course.create')" :active="request()->routeIs('dashboard')">
+                        {{ __('Create Course') }}
                     </x-nav-link>
                 </div>
             </div>

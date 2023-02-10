@@ -24,6 +24,7 @@ class User extends Authenticatable
         'designation',
         'role',
         'least_credit',
+        'status',
     ];
 
     /**
