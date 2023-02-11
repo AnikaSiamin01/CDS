@@ -51,9 +51,6 @@
                     <li class="nav-item mr-4">
                         <a class="nav-link" href="#">About</a>
                     </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
 
                 </ul>
 

@@ -45,18 +45,36 @@ class AdminController extends Controller
 
         $user_id=Auth::user()->id;
         $checkCourse=$request->checkCourse;
+        //dd($request->credit);
+        $selectedCourseIds = $request->input('checkCourse');
+        $totalCredit = 0;
 
-        foreach ($checkCourse as $item){
-
-           $course=Course::where('id',$item)->update([
-               'status'=>'1',
-               'assign_to'=>$user_id
-           ]);
-            $course=User::where('id',$user_id)->update([
-                'status'=>'1'
-            ]);
-
+        if ($selectedCourseIds) {
+            foreach ($selectedCourseIds as $selectedCourseId) {
+                $course = Course::find($selectedCourseId);
+                $totalCredit += $course->credit;
+            }
         }
+        //dd($totalCredit);
+        if ($totalCredit>=Auth::user()->least_credit){
+            foreach ($checkCourse as $item){
+
+                $course=Course::where('id',$item)->update([
+                    'status'=>'1',
+                    'assign_to'=>$user_id
+                ]);
+                $course=User::where('id',$user_id)->update([
+                    'status'=>'1'
+                ]);
+
+            }
+        }
+        else{
+              return  "Course credit should be more than requirement";}
+
+
+
+
         return view('admin.choice');
     }
 
