@@ -71,7 +71,7 @@
         <div class="container px-5 py-24 mx-auto">
             <div class="banner-body flex flex-col text-center w-full mb-12 ">
                 <h1 class="made_for sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Welcome to Course Distribution BSFMSTU</h1>
-                <p class="banner-sub lg:w-2/3 mx-auto leading-relaxed ">This site is only for distribute academic course among teacher in Banagamata Sheikh
+                <p class="banner-sub lg:w-2/3 mx-auto leading-relaxed ">This site is only for distribute academic courses among CSE department teacher in Banagamata Sheikh
                     Fojilatunnessa Mujib Science and Technology University</p>
             </div>
             <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:px-0">

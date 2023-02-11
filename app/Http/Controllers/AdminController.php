@@ -30,9 +30,7 @@ class AdminController extends Controller
         }
         else{
             $before_user_role=$user_role-1;
-            //dd($before_user_role);
             $before_user=User::where('role',$before_user_role)->first();
-            //dd($before_user);
             if($before_user->status!=""){
                 return view('admin.choice');
             }
