@@ -49,7 +49,7 @@
                         <a class="nav-link mr-4" href="{{route('home')}}">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item mr-4">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="{{route('about')}}">About</a>
                     </li>
 
                 </ul>
