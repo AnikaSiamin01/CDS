@@ -20,7 +20,7 @@
         <form action="{{route('register')}}" method="post">
             @csrf
             <div class="form-group">
-                <label for="first-name">First Name</label>
+                <label for="first-name">Name</label>
                 <input type="text" name="name" id="first-name">
             </div>
 {{--            <div class="form-group">--}}

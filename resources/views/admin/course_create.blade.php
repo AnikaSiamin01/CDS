@@ -16,7 +16,7 @@
 
         <!-- Name -->
         <div>
-            <x-label for="name" :value="__('Course Name')" />
+            <x-label for="name" :value="__('Course Name(shortly)')" />
 
             <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
         </div>
