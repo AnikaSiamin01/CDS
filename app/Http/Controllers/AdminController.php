@@ -70,7 +70,7 @@ class AdminController extends Controller
             }
         }
         else{
-              return  "Course credit should be more than requirement";}
+              return  "Course credit should be atleast equal to the requirement";}
 
 
 
